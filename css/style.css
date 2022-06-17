@@ -8,8 +8,20 @@ header h1 {
   margin: 0;
 }
 
+.btn {
+  display: block;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin: 10px auto;
+}
+
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
