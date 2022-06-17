@@ -1,4 +1,5 @@
 @import "utils/variables";
-h1{
-  font-family: $font-title;
+@import "components/header";
+body {
+  margin: 0;
 }
