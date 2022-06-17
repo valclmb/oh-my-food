@@ -2,7 +2,7 @@
 @import "components/header";
 @import "components/buttons";
 @import "components/functioning";
-
+@import "components/restaurant";
 body {
   margin: 0;
   font-family: $font-content;
@@ -15,7 +15,7 @@ h3 {
 }
 
 .content--padding {
-  padding: 20px;
+  padding: 20px 20px 50px;
 }
 
 // Location

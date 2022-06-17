@@ -53,6 +53,66 @@ header h1 {
   color: #9356DC;
 }
 
+.restaurant {
+  background-color: #efefef;
+}
+.restaurant__card {
+  position: relative;
+  margin: 20px 0;
+  box-shadow: #dadada 0 5px 10px;
+  border-radius: 15px;
+}
+.restaurant__card__img { /*Temporary*/
+  height: 200px;
+  background-color: grey;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+}
+.restaurant__card__info p {
+  margin: 0;
+  font-size: 18px;
+}
+.restaurant__card__info p:nth-child(2) {
+  font-weight: 300;
+  font-size: 16px;
+}
+.restaurant__card__info .fa-heart {
+  position: relative;
+  font-size: 25px;
+  transition: color 0.2s;
+}
+.restaurant__card__info .fa-heart.fa-solid {
+  position: absolute;
+  inset: 0;
+  color: #9356DC;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.restaurant__card__info .fa-heart.fa-regular:hover {
+  color: white;
+}
+.restaurant__card__info .fa-heart.fa-regular:hover .fa-solid {
+  opacity: 1;
+}
+.restaurant__card--new::before {
+  position: absolute;
+  content: "Nouveau";
+  right: 20px;
+  top: 20px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #278870;
+  background-color: #99E2D0;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -65,7 +125,7 @@ h3 {
 }
 
 .content--padding {
-  padding: 20px;
+  padding: 20px 20px 50px;
 }
 
 .location {

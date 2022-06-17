@@ -1,0 +1,72 @@
+.restaurant {
+  background-color: $color-bg;
+
+  &__card {
+    position: relative;
+    margin: 20px 0;
+    box-shadow: $box-shad-content;
+    border-radius: 15px;
+
+    &__img { /*Temporary*/
+      height: 200px;
+      background-color: grey;
+      border-radius: 15px 15px 0 0;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 0 0 15px 15px;
+      padding: 20px;
+
+      p {
+        margin: 0;
+        font-size: 18px;
+
+        &:nth-child(2) {
+          font-weight: 300;
+          font-size: 16px;
+        }
+      }
+      // heart animation hover
+      .fa-heart {
+        position: relative;
+        font-size: 25px;
+        transition: color .2s;
+        &.fa-solid{
+          position: absolute;
+          inset: 0;
+          color:$color-primary;
+          opacity: 0;
+          transition: opacity .2s;
+        }
+        &.fa-regular {
+          &:hover {
+            color: white;
+            .fa-solid{
+              opacity: 1;
+            }
+          }
+        }
+
+      }
+
+    }
+    &--new {
+      &::before {
+        position: absolute;
+        content: "Nouveau";
+        right: 20px;
+        top: 20px;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        color: darken($color-tertiary, 40%);
+        background-color: $color-tertiary;
+
+      }
+    }
+  }
+}
