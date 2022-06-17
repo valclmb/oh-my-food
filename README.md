@@ -1,4 +1,4 @@
-Ohmyfood project 
+# Ohmyfood
 
 Run sass : 
 ```npm
