@@ -4,4 +4,14 @@
 body {
   margin: 0;
   font-family: $font-content;
+  box-sizing: border-box;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+  p {
+    margin-left: 20px;
+  }
 }
