@@ -1,0 +1,28 @@
+// Functioning
+.functioning {
+  &__card {
+    position: relative;
+    background-color: $color-bg;
+    padding: 30px;
+    margin: 10px 0 20px 20px;
+    box-shadow: $box-shad-content;
+    border-radius: 20px;
+
+    i {
+      color: grey;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+
+    &__index {
+      position: absolute;
+      background-color: $color-primary;
+      color: white;
+      padding: 2px 7px;
+      border-radius: 20px;
+      left: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,30 +1,50 @@
 @import "utils/variables";
 @import "components/header";
 @import "components/buttons";
+@import "components/functioning";
+
 body {
   margin: 0;
   font-family: $font-content;
   box-sizing: border-box;
 }
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.content--padding {
+  padding: 20px;
+}
+
+// Location
 .location {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e5e5e5;
+
   p {
     margin-left: 20px;
   }
 }
+
+// Description
 .description {
-  background-color: #efefef;
+  background-color: $color-bg;
   padding: 50px;
   text-align: center;
-  h2{
+
+  h2 {
     margin: 0;
     font-size: 30px;
   }
-  p{
+
+  p {
     font-weight: 300;
     font-size: 20px;
   }
 }
+
+

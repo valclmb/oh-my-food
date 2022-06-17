@@ -19,13 +19,46 @@ header h1 {
   padding: 12px 25px;
   margin: 10px auto;
   font-size: 15px;
-  box-shadow: #b6b6b6 0 0 10px;
+  box-shadow: #919191 0 3px 10px;
+}
+
+.functioning__card {
+  position: relative;
+  background-color: #efefef;
+  padding: 30px;
+  margin: 10px 0 20px 20px;
+  box-shadow: #dadada 0 5px 10px;
+  border-radius: 20px;
+}
+.functioning__card i {
+  color: grey;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.functioning__card__index {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 20px;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.content--padding {
+  padding: 20px;
 }
 
 .location {
