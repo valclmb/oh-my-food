@@ -23,6 +23,15 @@
   box-shadow: $box-shad-content;
   margin: 15px 0;
   border-radius: 15px;
+  animation: shade-in .3s both;
+  // Display animation
+  @for $i from 1 through $num-cards {
+    &--#{$i} {
+      animation-delay: .3s * $i;
+    }
+  }
+
+
   &__cont {
     width: 100%;
     padding: 5px;
@@ -55,7 +64,6 @@
       }
     //HOVER
     &:hover  {
-      width: 90%;
       &+.menu__card__validate  {
         width: 65px;
         i{
@@ -90,5 +98,13 @@
     }
   }
 
+@keyframes shade-in {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 //min-width:60px;
