@@ -1,7 +1,41 @@
 .menu {
   h3{
+    position: relative;
     font-size: 17px;
     font-weight: 300;
     margin: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      background-color: $color-tertiary;
+      height: 3px;
+      width: 40px;
+    }
   }
+}
+.menu__card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: $box-shad-content;
+  margin: 15px 0;
+  p{
+    margin: 0;
+  }
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    p{
+      font-weight: 300;
+      font-size: 15px;
+    }
+    div{
+      margin-right: 15px;
+    }
+  }
+
 }

@@ -22,6 +22,9 @@ h3 {
 .content--padding {
   padding: 20px 20px 50px;
 }
+.background--color {
+  background-color: $color-bg;
+}
 
 // Location
 .location {
@@ -61,10 +64,10 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 10px 40px 0 20px;
+  background-color: $color-bg;
+  padding: 10px 45px 0 20px;
   margin-top: -50px;
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0 ;
   h2{
     font-family: $font-title;
     font-weight: lighter;

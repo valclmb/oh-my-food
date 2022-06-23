@@ -149,9 +149,43 @@
 }
 
 .menu h3 {
+  position: relative;
   font-size: 17px;
   font-weight: 300;
   margin: 0;
+}
+.menu h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+}
+
+.menu__card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: #dadada 0 5px 10px;
+  margin: 15px 0;
+}
+.menu__card p {
+  margin: 0;
+}
+.menu__card__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.menu__card__infos p {
+  font-weight: 300;
+  font-size: 15px;
+}
+.menu__card__infos div {
+  margin-right: 15px;
 }
 
 body {
@@ -172,6 +206,10 @@ h3 {
 
 .content--padding {
   padding: 20px 20px 50px;
+}
+
+.background--color {
+  background-color: #efefef;
 }
 
 .location {
@@ -207,10 +245,10 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 10px 40px 0 20px;
+  background-color: #efefef;
+  padding: 10px 45px 0 20px;
   margin-top: -50px;
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
 }
 .detail__title h2 {
   font-family: "Shrikhand", cursive;
