@@ -9,6 +9,38 @@ header h1 {
   margin: 0;
 }
 
+.footer {
+  background-color: #414141;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+}
+.footer__title {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Shrikhand", cursive;
+}
+.footer__title a {
+  color: white;
+  text-decoration: none;
+}
+.footer__list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer__list__item {
+  margin: 10px 0;
+}
+.footer__list__item--lighter {
+  font-weight: 300;
+}
+.footer__list i {
+  width: 15px;
+  font-size: 15px;
+  height: fit-content;
+  padding-right: 15px;
+}
+
 .btn {
   display: block;
   background: linear-gradient(to top left, #9356DC, #FF79DA);

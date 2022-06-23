@@ -1,0 +1,32 @@
+.footer {
+  background-color: $color-footer;
+  color: white;
+  font-size: 17px;
+  padding: 20px ;
+  &__title{
+    margin: 0;
+    font-size: 20px;
+    font-family: $font-title;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    &__item {
+      margin: 10px 0;
+      &--lighter {
+        font-weight: 300;
+      }
+    }
+    i{
+      width: 15px;
+      font-size: 15px;
+      height: fit-content;
+      padding-right: 15px ;
+    }
+  }
+
+}
