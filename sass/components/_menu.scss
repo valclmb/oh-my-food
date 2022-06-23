@@ -4,7 +4,6 @@
     font-size: 17px;
     font-weight: 300;
     margin: 0 0 20px 5px;
-
     &::after {
       content: "";
       position: absolute;
@@ -17,27 +16,79 @@
   }
 }
 .menu__card {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
-  padding: 10px;
-  border-radius: 15px;
   font-size: 18px;
   box-shadow: $box-shad-content;
   margin: 15px 0;
-  p{
-    margin: 0;
-  }
-  &__infos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-    p{
-      font-weight: 300;
-      font-size: 15px;
+  border-radius: 15px;
+  &__cont {
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+    transition: width .4s;
+    //SUB
+    p { /*Title*/
+      margin: 0;
     }
-    div{
-      margin-right: 15px;
+    &__infos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+
+      p {
+        font-weight: 300;
+        font-size: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        text-overflow: ellipsis;
+        width: fit-content;
+      }
+
+      div {
+        margin-right: 15px;
+      }
+
+      }
+    //HOVER
+    &:hover  {
+      width: 90%;
+      &+.menu__card__validate  {
+        width: 65px;
+        i{
+          opacity: 1;
+          transform:  translateX(0)  ;
+        }
+      }
+
+    }
+
+  }
+    // HOVER EFFECT
+    &__validate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-tertiary;
+      border-radius: 0 15px 15px 0;
+      transform-origin: right;
+      width: 0;
+      transition: width .4s ;
+      i {
+        opacity: 0;
+        color: $color-tertiary;
+        background-color: white;
+        padding: 4px;
+        border-radius: 50%;
+        font-size: 16px;
+        transform: translateX(10px) rotate(360deg);
+        transition: opacity .3s, transform .4s;
+      }
     }
   }
 
-}
+
+//min-width:60px;
