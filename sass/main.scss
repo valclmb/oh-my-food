@@ -21,6 +21,9 @@ h3 {
 
 .content--padding {
   padding: 20px 20px 50px;
+  &--soft {
+    padding: 20px 20px 10px 20px;
+  }
 }
 .background--color {
   background-color: $color-bg;
