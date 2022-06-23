@@ -51,8 +51,9 @@
   font-weight: 600;
   border: none;
   border-radius: 25px;
-  padding: 15px 25px;
+  padding: 15px 0;
   margin: 10px auto;
+  width: 240px;
   font-size: 15px;
   box-shadow: #a6a6a6 0 3px 10px;
 }
@@ -168,6 +169,7 @@
   background-color: white;
   padding: 10px;
   border-radius: 15px;
+  font-size: 18px;
   box-shadow: #dadada 0 5px 10px;
   margin: 15px 0;
 }
