@@ -23,11 +23,11 @@
   box-shadow: $box-shad-content;
   margin: 15px 0;
   border-radius: 15px;
-  animation: shade-in .3s both;
+  animation: shade-in .4s both;
   // Display animation
   @for $i from 1 through $num-cards {
     &--#{$i} {
-      animation-delay: .3s * $i;
+      animation-delay: .2s * $i;
     }
   }
 
