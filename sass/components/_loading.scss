@@ -1,0 +1,48 @@
+.loading {
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform : translate(50%, 50%);
+  margin-left: -80px;
+  &__bar {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 100px;
+    background-color: black;
+    animation: loading-stop $loading-time forwards , loading .5s alternate  $loading-time both 5;
+    @for $i from 1 through $num-loading {
+      &--#{$i} {
+        margin-left: ($i * 20 + px);
+        animation-delay: .2s * $i;
+        @if $i % 3 ==0 {
+          background-color: $color-secondary;
+        } @elseif $i % 2 ==0 {
+          background-color: $color-tertiary;
+
+      } @else {
+          background-color: $color-primary;
+        }
+      }
+    }
+    }
+  }
+
+@keyframes loading {
+  0%{
+    transform: scaleY(1) translateY(0);
+  }
+  100%{
+    transform: scaleY(0.5) translateY(30px) ;
+  }
+}
+@keyframes loading-stop {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}

@@ -2,6 +2,7 @@
 $color-primary : #9356DC;
 $color-secondary : #FF79DA;
 $color-tertiary : #99E2D0;
+
 $color-bg : #efefef;
 $color-footer : #414141;
 // FONT
@@ -9,6 +10,11 @@ $font-content : 'Roboto', sans-serif;
 $font-title :'Shrikhand', cursive;
 // BOX SHADOW
 $box-shad-button : #a6a6a6 0 3px 10px;
+$box-shad-button-hover :  #a6a6a6 0 3px 2px;
 $box-shad-content : #dadada 0 5px 10px;
 // SHADE-IN ANIMATION NUMBER OF CARD
 $num-cards : 10;
+// LOADING BAR
+$loading-time : random(3) + s;
+$num-loading : 6;
+$loading-colors: $color-primary,$color-primary,$color-secondary,$color-primary $color-secondary, $color-tertiary;

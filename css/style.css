@@ -56,6 +56,12 @@
   width: 220px;
   font-size: 15px;
   box-shadow: #a6a6a6 0 3px 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: linear-gradient(to top left, #a978e3, #ffa2e5);
+  box-shadow: #a6a6a6 0 3px 2px;
 }
 
 .functioning__card {
@@ -189,7 +195,7 @@
 }
 .menu__card__cont {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   border-radius: 15px 0 0 15px;
   transition: width 0.4s;
 }
@@ -210,9 +216,13 @@
   display: inline-block;
   text-overflow: ellipsis;
   width: fit-content;
+  padding-right: 10px;
 }
 .menu__card__cont__infos div {
   margin-right: 15px;
+}
+.menu__card__cont:hover {
+  width: calc(100% - 65px);
 }
 .menu__card__cont:hover + .menu__card__validate {
   width: 65px;
@@ -248,6 +258,69 @@
   }
   100% {
     opacity: 1;
+  }
+}
+.loading {
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(50%, 50%);
+  margin-left: -80px;
+}
+.loading__bar {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 100px;
+  background-color: black;
+  animation: loading-stop 3s forwards, loading 0.5s alternate 3s both 5;
+}
+.loading__bar--1 {
+  margin-left: 20px;
+  animation-delay: 0.2s;
+  background-color: #9356DC;
+}
+.loading__bar--2 {
+  margin-left: 40px;
+  animation-delay: 0.4s;
+  background-color: #99E2D0;
+}
+.loading__bar--3 {
+  margin-left: 60px;
+  animation-delay: 0.6s;
+  background-color: #FF79DA;
+}
+.loading__bar--4 {
+  margin-left: 80px;
+  animation-delay: 0.8s;
+  background-color: #99E2D0;
+}
+.loading__bar--5 {
+  margin-left: 100px;
+  animation-delay: 1s;
+  background-color: #9356DC;
+}
+.loading__bar--6 {
+  margin-left: 120px;
+  animation-delay: 1.2s;
+  background-color: #FF79DA;
+}
+
+@keyframes loading {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+  100% {
+    transform: scaleY(0.5) translateY(30px);
+  }
+}
+@keyframes loading-stop {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 body {
@@ -343,6 +416,19 @@ h3 {
 }
 .detail__title i {
   font-size: 25px;
+}
+
+.main {
+  animation: main-in 1s 3s both;
+}
+
+@keyframes main-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -31,10 +31,9 @@
     }
   }
 
-
   &__cont {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px 0 0 15px;
     transition: width .4s;
     //SUB
@@ -55,6 +54,7 @@
         display: inline-block;
         text-overflow: ellipsis;
         width: fit-content;
+        padding-right: 10px;
       }
 
       div {
@@ -64,6 +64,7 @@
       }
     //HOVER
     &:hover  {
+      width: calc(100% - 65px);
       &+.menu__card__validate  {
         width: 65px;
         i{

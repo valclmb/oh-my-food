@@ -5,6 +5,7 @@
 @import "components/functioning";
 @import "components/restaurant";
 @import "components/menu";
+@import "components/loading";
 body {
   margin: 0;
   font-family: $font-content;
@@ -103,6 +104,20 @@ h3 {
   }
   i {
   font-size: 25px;
+  }
+}
+
+// Chargin animation
+
+.main {
+  animation: main-in 1s $loading-time both;
+}
+@keyframes main-in {
+  0%{
+   opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 
