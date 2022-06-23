@@ -20,10 +20,6 @@ header h1 {
   font-size: 20px;
   font-family: "Shrikhand", cursive;
 }
-.footer__title a {
-  color: white;
-  text-decoration: none;
-}
 .footer__list {
   list-style-type: none;
   padding: 0;
@@ -149,6 +145,11 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h3 {
