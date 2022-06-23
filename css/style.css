@@ -148,6 +148,12 @@
   background-color: #99E2D0;
 }
 
+.menu h3 {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -202,12 +208,15 @@ h3 {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 10px 40px 10px 30px;
+  padding: 10px 40px 0 20px;
   margin-top: -50px;
   border-radius: 50px;
 }
 .detail__title h2 {
   font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  font-size: 27px;
+  margin-bottom: 10px;
 }
 .detail__title i {
   font-size: 25px;

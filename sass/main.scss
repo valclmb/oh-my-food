@@ -4,6 +4,7 @@
 @import "components/buttons";
 @import "components/functioning";
 @import "components/restaurant";
+@import "components/menu";
 body {
   margin: 0;
   font-family: $font-content;
@@ -51,8 +52,7 @@ h3 {
   }
 }
 
-// Detail : Presentation img
-
+// Detail
 .presentation__img {
   height: 300px;
   background-color: #b2b2b2;
@@ -62,11 +62,14 @@ h3 {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 10px 40px 10px 30px;
+  padding: 10px 40px 0 20px;
   margin-top: -50px;
   border-radius: 50px;
   h2{
     font-family: $font-title;
+    font-weight: lighter;
+    font-size: 27px;
+    margin-bottom: 10px;
   }
   i {
   font-size: 25px;
