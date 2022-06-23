@@ -30,28 +30,6 @@
           font-size: 16px;
         }
       }
-      // heart animation hover
-      .fa-heart {
-        position: relative;
-        font-size: 25px;
-        transition: color .2s;
-        &.fa-solid{
-          position: absolute;
-          inset: 0;
-          color:$color-primary;
-          opacity: 0;
-          transition: opacity .2s;
-        }
-        &.fa-regular {
-          &:hover {
-            color: white;
-            .fa-solid{
-              opacity: 1;
-            }
-          }
-        }
-
-      }
 
     }
     &--new {

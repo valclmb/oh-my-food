@@ -119,24 +119,6 @@
   font-weight: 300;
   font-size: 16px;
 }
-.restaurant__card__info .fa-heart {
-  position: relative;
-  font-size: 25px;
-  transition: color 0.2s;
-}
-.restaurant__card__info .fa-heart.fa-solid {
-  position: absolute;
-  inset: 0;
-  color: #9356DC;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-.restaurant__card__info .fa-heart.fa-regular:hover {
-  color: white;
-}
-.restaurant__card__info .fa-heart.fa-regular:hover .fa-solid {
-  opacity: 1;
-}
 .restaurant__card--new::before {
   position: absolute;
   content: "Nouveau";
@@ -289,6 +271,25 @@ h3 {
 }
 .content--padding--soft {
   padding: 20px 20px 10px 20px;
+}
+
+.fa-heart {
+  position: relative;
+  font-size: 25px;
+  transition: color 0.2s;
+}
+.fa-heart.fa-solid {
+  position: absolute;
+  inset: 0;
+  color: #9356DC;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.fa-heart.fa-regular:hover {
+  color: white;
+}
+.fa-heart.fa-regular:hover .fa-solid {
+  opacity: 1;
 }
 
 .location {
