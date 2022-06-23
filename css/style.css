@@ -1,12 +1,19 @@
-header {
+.header {
   position: relative;
   font-family: "Shrikhand", cursive;
   padding: 10px;
   box-shadow: grey 0 0 10px;
 }
-header h1 {
+.header h1 {
   text-align: center;
   margin: 0;
+}
+.header i {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  font-size: 20px;
+  transform: translateY(-50%);
 }
 
 .footer {
