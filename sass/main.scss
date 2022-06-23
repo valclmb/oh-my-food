@@ -51,4 +51,25 @@ h3 {
   }
 }
 
+// Detail : Presentation img
+
+.presentation__img {
+  height: 300px;
+  background-color: #b2b2b2;
+}
+.detail__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px 10px 30px;
+  margin-top: -50px;
+  border-radius: 50px;
+  h2{
+    font-family: $font-title;
+  }
+  i {
+  font-size: 25px;
+  }
+}
 
