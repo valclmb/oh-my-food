@@ -3,45 +3,47 @@
   position: fixed;
   left: 50%;
   top: 40%;
-  transform : translate(50%, 50%);
-  margin-left: -80px;
+  transform: translate(50%, 50%);
+  margin-left: -280px;
+
   &__bar {
     position: absolute;
     content: "";
-    width: 10px;
-    height: 100px;
+    width: 45px;
+    height: 500px;
     background-color: black;
-    animation: loading-stop $loading-time forwards , loading .5s alternate  $loading-time both 5;
+    transform-origin: bottom;
+    animation: loading-stop $loading-time forwards, loading .5s alternate $loading-time both 5;
     @for $i from 1 through $num-loading {
       &--#{$i} {
-        margin-left: ($i * 20 + px);
+        margin-left: ($i * 80 + px);
         animation-delay: .2s * $i;
-        @if $i % 3 ==0 {
+        @if $i % 3 == 0 {
           background-color: $color-secondary;
-        } @elseif $i % 2 ==0 {
+        } @else if $i % 2 == 0 {
           background-color: $color-tertiary;
-
-      } @else {
+        } @else {
           background-color: $color-primary;
         }
       }
     }
-    }
-  }
-
-@keyframes loading {
-  0%{
-    transform: scaleY(1) translateY(0);
-  }
-  100%{
-    transform: scaleY(0.5) translateY(30px) ;
   }
 }
+
+@keyframes loading {
+  0% {
+    transform: scaleY(1) ;
+  }
+  100% {
+    transform: scaleY(0.5) ;
+  }
+}
+
 @keyframes loading-stop {
-  0%{
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 

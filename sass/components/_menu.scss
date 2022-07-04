@@ -1,17 +1,17 @@
 .menu {
   h3{
     position: relative;
-    font-size: 17px;
+    font-size: 40px;
     font-weight: 300;
-    margin: 0 0 20px 5px;
+    margin: 0 0 50px 5px;
     &::after {
       content: "";
       position: absolute;
-      bottom: -5px;
+      bottom: -15px;
       left: 0;
       background-color: $color-tertiary;
-      height: 3px;
-      width: 40px;
+      height: 8px;
+      width: 100px;
     }
   }
 }
@@ -19,10 +19,11 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
-  font-size: 18px;
   box-shadow: $box-shad-content;
-  margin: 15px 0;
-  border-radius: 15px;
+  margin: 15px 0 30px;
+  border-radius: 40px;
+  z-index: 1;
+  overflow: hidden;
   animation: shade-in .4s both;
   // Display animation
   @for $i from 1 through $num-cards {
@@ -32,23 +33,24 @@
   }
 
   &__cont {
-    width: 100%;
-    padding: 10px;
-    border-radius: 15px 0 0 15px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius:40px 0 0 40px;
     transition: width .4s;
+    width: 100%;
+    font-size: 45px;
     //SUB
     p { /*Title*/
-      margin: 0;
+      margin: 5px 0 0 0;
     }
     &__infos {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 5px 0;
-
+      font-size: 38px;
       p {
         font-weight: 300;
-        font-size: 15px;
         overflow: hidden;
         white-space: nowrap;
         display: inline-block;
@@ -58,18 +60,25 @@
       }
 
       div {
-        margin-right: 15px;
+        transform: translateX(-15px);
+        transition: transform .1s;
       }
 
       }
     //HOVER
     &:hover  {
-      width: calc(100% - 65px);
+      width: calc(100% - 170px);
+      div{
+        transform: translateX(0);
+      }
       &+.menu__card__validate  {
-        width: 65px;
+        width: 170px;
         i{
+          visibility: visible;
+          font-size: 35px;
           opacity: 1;
-          transform:  translateX(0)  ;
+          animation: validate-in .5s ;
+          transform:  translateX(0) ;
         }
       }
 
@@ -82,19 +91,20 @@
       justify-content: center;
       align-items: center;
       background-color: $color-tertiary;
-      border-radius: 0 15px 15px 0;
+      border-radius: 0 40px 40px 0;
       transform-origin: right;
       width: 0;
-      transition: width .4s ;
+      z-index: -1;
+      transition: width .3s ;
       i {
+        visibility: hidden;
         opacity: 0;
         color: $color-tertiary;
         background-color: white;
-        padding: 4px;
+        padding: 10px;
         border-radius: 50%;
-        font-size: 16px;
-        transform: translateX(10px) rotate(360deg);
-        transition: opacity .3s, transform .4s;
+        font-size: 35px;
+        transition: opacity .3s, transform .5s, visibility .3s;
       }
     }
   }
@@ -108,4 +118,12 @@
   }
 }
 
-//min-width:60px;
+@keyframes validate-in {
+  0%{
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}

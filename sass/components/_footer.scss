@@ -2,15 +2,16 @@
   background-color: $color-footer;
   color: white;
   font-size: 17px;
-  padding: 20px ;
+  padding: 50px 70px ;
   &__title{
     margin: 0;
-    font-size: 20px;
+    font-size: 40px;
     font-family: $font-title;
   }
   &__list {
     list-style-type: none;
     padding: 0;
+    font-size: 35px;
     &__item {
       margin: 10px 0;
       &--lighter {
@@ -19,9 +20,8 @@
     }
     i{
       width: 15px;
-      font-size: 15px;
       height: fit-content;
-      padding-right: 15px ;
+      padding-right: 70px ;
     }
   }
 

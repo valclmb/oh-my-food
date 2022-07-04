@@ -1,18 +1,21 @@
 .header {
   position: relative;
   font-family: "Shrikhand", cursive;
-  padding: 10px;
+  padding: 20px;
   box-shadow: grey 0 0 10px;
+  z-index: 5;
 }
 .header h1 {
+  font-size: 75px;
   text-align: center;
   margin: 0;
+  font-weight: lighter;
 }
 .header i {
   position: absolute;
   top: 50%;
-  left: 25px;
-  font-size: 20px;
+  left: 50px;
+  font-size: 50px;
   transform: translateY(-50%);
 }
 
@@ -20,16 +23,17 @@
   background-color: #414141;
   color: white;
   font-size: 17px;
-  padding: 20px;
+  padding: 50px 70px;
 }
 .footer__title {
   margin: 0;
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Shrikhand", cursive;
 }
 .footer__list {
   list-style-type: none;
   padding: 0;
+  font-size: 35px;
 }
 .footer__list__item {
   margin: 10px 0;
@@ -39,23 +43,21 @@
 }
 .footer__list i {
   width: 15px;
-  font-size: 15px;
   height: fit-content;
-  padding-right: 15px;
+  padding-right: 70px;
 }
 
 .btn {
   display: block;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
-  font-weight: 600;
   border: none;
-  border-radius: 25px;
-  padding: 15px 0;
+  border-radius: 100px;
+  padding: 40px 0;
   margin: 10px auto;
-  width: 220px;
-  font-size: 15px;
-  box-shadow: #a6a6a6 0 3px 10px;
+  width: 550px;
+  font-size: 40px;
+  box-shadow: #a6a6a6 0 10px 20px;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -67,26 +69,27 @@
 .functioning__card {
   position: relative;
   background-color: #efefef;
-  padding: 25px 30px;
-  margin: 10px 0 20px 10px;
-  box-shadow: #dadada 0 5px 10px;
-  border-radius: 20px;
+  padding: 70px 50px 70px 100px;
+  margin: 50px 0 50px 50px;
+  box-shadow: #cbcbcb 0 8px 30px;
+  border-radius: 60px;
+  font-size: 35px;
 }
 .functioning__card i {
   color: grey;
-  font-size: 18px;
-  margin-right: 20px;
+  margin-right: 60px;
+  font-size: 40px;
 }
 .functioning__card__index {
   position: absolute;
   background-color: #9356DC;
   color: white;
-  padding: 3px 8px;
-  border-radius: 25px;
-  left: -13px;
+  padding: 11px 22px;
+  border-radius: 50%;
+  left: -25px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 15px;
+  font-size: 40px;
 }
 .functioning__card--active {
   background-color: #f2eafb;
@@ -100,67 +103,72 @@
 }
 .restaurant__card {
   position: relative;
-  margin: 20px 0;
-  box-shadow: #dadada 0 5px 10px;
-  border-radius: 15px;
+  margin: 10px 0 50px 0;
+  box-shadow: #cbcbcb 0 8px 30px;
+  border-radius: 35px;
 }
 .restaurant__card__img { /*Temporary*/
-  height: 200px;
-  background-color: grey;
-  border-radius: 15px 15px 0 0;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 35px 35px 0 0;
 }
 .restaurant__card__info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  border-radius: 0 0 15px 15px;
-  padding: 20px;
+  border-radius: 0 0 35px 35px;
+  padding: 35px;
+  margin-top: -5px;
+}
+.restaurant__card__info h4 {
+  margin: 0;
+  font-size: 45px;
 }
 .restaurant__card__info p {
   margin: 0;
-  font-size: 18px;
-}
-.restaurant__card__info p:nth-child(2) {
+  margin-top: 10px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 40px;
 }
 .restaurant__card--new::before {
   position: absolute;
   content: "Nouveau";
-  right: 20px;
-  top: 20px;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 2px;
+  right: 30px;
+  top: 30px;
+  font-size: 30px;
+  padding: 15px 25px;
+  border-radius: 5px;
   color: #278870;
   background-color: #99E2D0;
 }
 
 .menu h3 {
   position: relative;
-  font-size: 17px;
+  font-size: 40px;
   font-weight: 300;
-  margin: 0 0 20px 5px;
+  margin: 0 0 50px 5px;
 }
 .menu h3::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -15px;
   left: 0;
   background-color: #99E2D0;
-  height: 3px;
-  width: 40px;
+  height: 8px;
+  width: 100px;
 }
 
 .menu__card {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  font-size: 18px;
-  box-shadow: #dadada 0 5px 10px;
-  margin: 15px 0;
-  border-radius: 15px;
+  box-shadow: #cbcbcb 0 8px 30px;
+  margin: 15px 0 30px;
+  border-radius: 40px;
+  z-index: 1;
+  overflow: hidden;
   animation: shade-in 0.4s both;
 }
 .menu__card--1 {
@@ -194,23 +202,25 @@
   animation-delay: 2s;
 }
 .menu__card__cont {
-  width: 100%;
-  padding: 10px;
-  border-radius: 15px 0 0 15px;
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 40px 0 0 40px;
   transition: width 0.4s;
+  width: 100%;
+  font-size: 45px;
 }
 .menu__card__cont p { /*Title*/
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 .menu__card__cont__infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
+  font-size: 38px;
 }
 .menu__card__cont__infos p {
   font-weight: 300;
-  font-size: 15px;
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
@@ -219,16 +229,23 @@
   padding-right: 10px;
 }
 .menu__card__cont__infos div {
-  margin-right: 15px;
+  transform: translateX(-15px);
+  transition: transform 0.1s;
 }
 .menu__card__cont:hover {
-  width: calc(100% - 65px);
+  width: calc(100% - 170px);
+}
+.menu__card__cont:hover div {
+  transform: translateX(0);
 }
 .menu__card__cont:hover + .menu__card__validate {
-  width: 65px;
+  width: 170px;
 }
 .menu__card__cont:hover + .menu__card__validate i {
+  visibility: visible;
+  font-size: 35px;
   opacity: 1;
+  animation: validate-in 0.5s;
   transform: translateX(0);
 }
 .menu__card__validate {
@@ -236,20 +253,21 @@
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 40px 40px 0;
   transform-origin: right;
   width: 0;
-  transition: width 0.4s;
+  z-index: -1;
+  transition: width 0.3s;
 }
 .menu__card__validate i {
+  visibility: hidden;
   opacity: 0;
   color: #99E2D0;
   background-color: white;
-  padding: 4px;
+  padding: 10px;
   border-radius: 50%;
-  font-size: 16px;
-  transform: translateX(10px) rotate(360deg);
-  transition: opacity 0.3s, transform 0.4s;
+  font-size: 35px;
+  transition: opacity 0.3s, transform 0.5s, visibility 0.3s;
 }
 
 @keyframes shade-in {
@@ -260,59 +278,68 @@
     opacity: 1;
   }
 }
+@keyframes validate-in {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .loading {
   z-index: 2;
   position: fixed;
   left: 50%;
   top: 40%;
   transform: translate(50%, 50%);
-  margin-left: -80px;
+  margin-left: -280px;
 }
 .loading__bar {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 100px;
+  width: 45px;
+  height: 500px;
   background-color: black;
-  animation: loading-stop 3s forwards, loading 0.5s alternate 3s both 5;
+  transform-origin: bottom;
+  animation: loading-stop 2s forwards, loading 0.5s alternate 2s both 5;
 }
 .loading__bar--1 {
-  margin-left: 20px;
+  margin-left: 80px;
   animation-delay: 0.2s;
   background-color: #9356DC;
 }
 .loading__bar--2 {
-  margin-left: 40px;
+  margin-left: 160px;
   animation-delay: 0.4s;
   background-color: #99E2D0;
 }
 .loading__bar--3 {
-  margin-left: 60px;
+  margin-left: 240px;
   animation-delay: 0.6s;
   background-color: #FF79DA;
 }
 .loading__bar--4 {
-  margin-left: 80px;
+  margin-left: 320px;
   animation-delay: 0.8s;
   background-color: #99E2D0;
 }
 .loading__bar--5 {
-  margin-left: 100px;
+  margin-left: 400px;
   animation-delay: 1s;
   background-color: #9356DC;
 }
 .loading__bar--6 {
-  margin-left: 120px;
+  margin-left: 480px;
   animation-delay: 1.2s;
   background-color: #FF79DA;
 }
 
 @keyframes loading {
   0% {
-    transform: scaleY(1) translateY(0);
+    transform: scaleY(1);
   }
   100% {
-    transform: scaleY(0.5) translateY(30px);
+    transform: scaleY(0.5);
   }
 }
 @keyframes loading-stop {
@@ -335,21 +362,21 @@ a {
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 65px;
 }
 
 .content--padding {
-  padding: 20px 20px 50px;
+  padding: 30px 50px 100px;
 }
 .content--padding--soft {
-  padding: 20px 20px 10px 20px;
+  padding: 30px 50px;
 }
 
 .fa-heart {
   position: relative;
-  font-size: 25px;
+  font-size: 55px;
   transition: color 0.2s;
+  margin-right: 20px;
 }
 .fa-heart.fa-solid {
   position: absolute;
@@ -366,27 +393,29 @@ h3 {
 }
 
 .location {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e5e5e5;
+  font-size: 40px;
 }
 .location p {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .description {
   background-color: #efefef;
-  padding: 50px;
+  padding: 100px;
   text-align: center;
 }
 .description h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 65px;
 }
 .description p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 45px;
 }
 
 .detail {
@@ -396,30 +425,32 @@ h3 {
 }
 
 .presentation__img {
-  height: 300px;
-  background-color: #b2b2b2;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .detail__title {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 45px 0 20px;
+  padding: 50px 55px 20px 55px;
   margin-top: -50px;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
 }
 .detail__title h2 {
   font-family: "Shrikhand", cursive;
   font-weight: lighter;
-  font-size: 27px;
-  margin-bottom: 10px;
-}
-.detail__title i {
-  font-size: 25px;
+  font-size: 65px;
+  margin: 0;
 }
 
 .main {
-  animation: main-in 1s 3s both;
+  animation: main-in 1s 2s both;
 }
 
 @keyframes main-in {
