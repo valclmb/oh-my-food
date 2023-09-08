@@ -53,10 +53,10 @@
   color: white;
   border: none;
   border-radius: 100px;
-  padding: 40px 0;
+  padding: 40px 20px;
   margin: 10px auto;
-  width: 550px;
-  font-size: 40px;
+  max-width: 440px;
+  font-size: 30px;
   box-shadow: #a6a6a6 0 10px 20px;
   transition: all 0.2s;
   cursor: pointer;
